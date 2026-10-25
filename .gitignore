@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*credentials*.json
+
+# Datasets
+data/
+imagesTr/
+labelsTr/
+*.nii.gz
+
+# Generated outputs
+results/*
+!results/.gitkeep
+
+figures/*
+!figures/.gitkeep
+
+# Local notebook files
+.ipynb_checkpoints/
