@@ -1,0 +1,26 @@
+ANNOTATION_PROMPT = """
+Analyze this 2D ovarian ultrasound image for a research experiment.
+
+Your task is to identify and describe visually apparent
+follicle-like structures.
+
+Instructions:
+1. Identify rounded or oval hypoechoic or anechoic regions
+   that may correspond to ovarian follicles.
+2. Estimate the number of visible follicle-like regions.
+3. Provide a bounding box for each identified region.
+4. Use normalized coordinates from 0 to 1000:
+   [xmin, ymin, xmax, ymax].
+5. Describe the visible shape and appearance.
+6. Assess image quality as good, moderate, or poor.
+7. Indicate uncertainty when appropriate.
+8. If no structures can be identified reliably,
+   return an empty regions list and count 0.
+9. Do not infer medical diagnoses or patient characteristics.
+10. Do not assume that every dark region is a follicle.
+11. Ensure that follicle_like_count equals the number of regions.
+
+Return structured annotations according to the provided schema.
+"""
+
+print("Annotation prompt ready.")
